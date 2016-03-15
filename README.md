@@ -10,8 +10,16 @@ to use:
 docker pull bhurlow/docker-kirby-nginx
 ```
 
+### build it
+
+```
+cd docker-kirby-nginx
+docker build -t bhurlow/docker-kirby-nginx .
+```
+
 ### run it:
 ```
+cd sample
 docker run -i -t -p 3000:80 -v $PWD:/app bhurlow/docker-kirby-nginx
 ```
 
